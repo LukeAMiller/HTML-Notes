@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="My HTML Notes" content="A summary of what I have learned about HTML">
     <title>HTML/coding notes</title>
 </head>
 <!--HTTPS Hypertext Transport Protocol Secure -->
@@ -10,6 +10,15 @@
 <!--MathML Math Markup Language-->
 <!--DOM Document Object Model-->
 <body>
+    <header><h1>Luke's HTML notes</h1></header>
+    <h3>major elements of a html page include</h3><ul>
+        <li>main</li>
+        <li>header</li>
+        <li>footer</li>
+        <li>article</li>
+        <li>section</li>
+        <li>aside</li>
+    </ul>
     <time datetime="2020-07-27T09-15-30.001">July 27, 2020</time>
     <h4>Github Commands</h4>
     <div>touch index.html, style.css, javascript.js</div>
@@ -18,6 +27,8 @@
 <br/>relative URL = /about/me
 </div>
 <a href="http://www.example.com">Example.com</a>
+<p>A link element can reference different pages on your site or css styling</p>
+<section>
 <h4>Images</h4>
 <ul>
 <li>Gif- small movies</li>
@@ -33,7 +44,7 @@
     <img alt="Snowflake" width="600" height="400" src="C:\Users\Newforce40\Pictures\Saved Pictures\Snowflake.jpg"
     srcset="C:\Users\Newforce40\Pictures\Saved Pictures\Snowflake (5).jpg 1x, C:\Users\Newforce40\Pictures\Saved Pictures\Snowflake (4).jpg 2x,
     C:\Users\Newforce40\Pictures\Saved Pictures\Snowflake.jpg 3x"/><figcaption>This is a snowflake and a figcaption</figcaption></figure></picture>
-
+</section>
 <h4>Example code</h4>
 <code>this is an example of some HTML entities &lt;code&gt;&copy;&trade;&star;&lt;/code&gt;
 </code>
@@ -44,11 +55,18 @@
 <div lang="en-GB"contenteditable="true"id="2"class="cohort">Class<br>Id<br/>Lang<br/>contenteditable</div>
 <h4>Audio</h4>
 <audio controls autoplay><source src="C:\Users\Newforce40\Downloads\trogdor.mp3" type="audio/mpeg">Sorry your browser doesn't support the audio.</audio>
-<div>attributes include autoplay, loop</div>
+<span>attributes include autoplay, loop</span>
 <h4>Video</h4>
 <div>Codex-ways to send video files</div>
-<div>examples include Real Video, Sorenson, Windows Media, FLV, H.263, H.264 is most common but not free to use</div>
-<div></div>
-<video controls><source src="C:\Users\Newforce40\Videos\Captures\My Video.mp4" type="video/mp4"></video>
+<p>examples include<ul><li>Real Video</li> <li>Sorenson</li> <li>Windows Media</li> <li>FLV</li> <li>H.263</li></ul>
+H.264 is most common but not free to use.
+Inside video element use track, kind, label, srclang, and default to link subtitles or captions. Use multiple track files for different languages.
+Kind attrubite has multiple options such as captions, subtitles, chapters or descriptions for visually impared</p></div>
+<video height="500" width="500" controls><source src="C:\Users\Newforce40\Videos\Captures\My Video.mp4" type="video/mp4">
+<track src="this is the link to the text" kind="subtitles" label="english" srclang="en" default></video>
+    <div>Embedding: Placing content from one site into the body of a page on another site</div>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IsOTFWf0AWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div lang="en-GB">The lang attribute can be put on any element, a universal attribute. It is useful if parts of your page are in another language</div>
+<div>Unicode- has 137,000 characters to help computers interpret every language. Set the charset in the head of the page with  <code>&lt;head>&lt;meta charset="Unicode">&lt;/head>&lt;/code></div>
 </body>
 </html>
